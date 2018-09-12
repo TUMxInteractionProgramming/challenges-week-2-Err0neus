@@ -1,0 +1,141 @@
+/* color palette:
+    * Background: #F5F5F5 (GREY 100)
+    * Primary Text: black
+    * Primary color: #3F51B5 (INDIGO)
+    * Primary color_text : white
+    * Accent color: #CDDC39 (LIME)
+    * Accent color_text: black
+    */
+
+
+
+/* .....GLOBAL..... */
+
+
+* {
+    /* global font and reset padding/margins */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background color */
+    background-color: #F5F5F5;
+}
+
+button, strong {
+    /* uppercase for buttons and w3w locations*/
+    text-transform: uppercase;
+}
+
+
+/* .....APP BAR..... */
+
+h1 {
+    /* #colourful #app-bar */
+    background-color: #3F51B5;
+    color: white;
+}
+
+
+/* .....CHANNELS LIST..... */
+
+ol {
+    /* #2 #colorful #channelandchat */
+    background-color: white;
+    list-style-type: none;
+}
+
+li {
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #F5F5F5;
+    height: 20px;
+}
+
+li img {
+    vertical-align: middle;
+}
+
+li.selected {
+    /* formatting for selected channel */
+    border-left: 4px solid #3F51B5;
+}
+
+/* .....TAB BAR..... */
+
+#tab-bar {
+    /* general style of the tab bar */
+    background-color:white;
+    text-align: center;
+}
+
+#tab-bar button.selected {
+    /* selected tab bar button formatting */
+    border-bottom: 4px solid #3F51B5;
+    color: #3F51B5;
+}
+
+#tab-bar button {
+    /* tab bar buttons */
+    background-color:white;
+    border: 0;
+    font-size: 13px;
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+    
+}
+
+#tab-bar button img {
+    /* tab bar button icons */
+    margin: 0 auto;
+    padding-bottom: 4px;
+}
+
+
+
+
+/* .....MESSAGES..... */
+
+.message {
+    /* style for message containers */
+    width: 80%;
+    margin-bottom: 8px;
+    margin-left: 2.5%;
+}
+
+.message.own {
+    /* my 'own' message alignment override */
+    margin-left: 17.5%;
+}
+
+.message h3 {
+    /* formatting the message metadata */
+    font-size: medium;
+}
+
+.message h3 a {
+    /* formatting the the link content */
+    color: black;
+}
+
+.message p {
+    /* formatting the message text */
+    background-color: white;
+    padding: 16px;
+}
+
+.message button {
+    /* formatting the message button */
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+}
+
+.message em {
+    /* formatting the em elements - overrides the default italic appearance */
+    font-size: larger;
+    font-style: normal;
+}
